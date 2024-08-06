@@ -18,12 +18,40 @@
 
 The mission of AskCodeium is to democratize access to AI chat services by making them free, easy to integrate, and accessible for all developers.
 
-## 📚 More on AskCodeium
+## 💾 Installation
 
-- ### 💾 [Installation and Setup](./docs/setup.md)
-- ### 📑 [AskCodeium Documentation](https://github.com/TheCyberLocal/AskCodeium/wiki)
+Install AskCodeium via pip:
 
-<!-- - ### ✨ [AskCodeium in action!](https://api-project-xwci.onrender.com) -->
+```bash
+pip install askcodeium
+```
+
+## ✨ AskCodeium in action!
+
+```py
+from AskCodeium import createChat
+
+chat1 = createChat()
+
+response = await chat1("What is the python programming language?")
+
+print(response)
+# Output Example:
+# Python is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms like procedural, object-oriented, and functional programming.
+
+response = await chat1("What did I previously ask you about?")
+
+print(response)
+# Output Example:
+# You previously asked about the Python programming language.
+
+chat1.clearHistory()
+
+response = await chat1("What is the python programming language?")
+print(response)
+# Output Example:
+# I'm sorry, I do not have the capability to recall previous interactions. How can I assist you today?
+```
 
 ## 🌐 Socials
 
