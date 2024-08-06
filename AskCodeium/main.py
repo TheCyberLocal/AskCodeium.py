@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from api import chat
+from AskCodeium.api import chat
 
 app = FastAPI()
 

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from models.chat_thread import ChatThread
-from services.codeium_service import CodeiumService
+from AskCodeium.models.chat_thread import ChatThread
+from AskCodeium.services.codeium_service import CodeiumService
 
 router = APIRouter()
 chat_threads = {}

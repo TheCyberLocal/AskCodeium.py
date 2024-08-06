@@ -1,3 +1,4 @@
+from AskCodeium.services.codeium_service import CodeiumService
 import uuid
 
 class ChatThread:
@@ -13,3 +14,9 @@ class ChatThread:
 
     def get_context(self):
         return " ".join(self.history)
+
+    async def __call__(self, message):
+        response = await CodeiumService.send_request(self, message)
+        self.add_message(message)
+        self.add_message(response)
+        return response
