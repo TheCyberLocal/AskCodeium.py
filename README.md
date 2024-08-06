@@ -2,16 +2,16 @@
 
 ## 🗺️ Project Overview
 
-This project was developed to allow developer applications to communicate with codeium chat live for free via an API without the need for an account.
+AskCodeium is an API designed to enable developer applications to interact with the Codeium chat service in real-time without requiring user accounts. The API focuses on simplicity and maintaining conversational context through thread management, providing a seamless integration experience for developers.
 
 ## 🗝️ Key Features
 
-- **Simplicity:** Simple setup and implementation.
-- **Thread Context:** Applications can continue querying responses that include the context of previous queries.
+- **Simplicity:** Easy setup and implementation process for developers, with clear documentation and examples.
+- **Thread Context:** Allows applications to maintain the context of conversations across multiple queries.
 
 ## 🎯 Project Mission
 
-The mission of AskCodeium is to make AI chat APIs free, easy, and accessible.
+The mission of AskCodeium is to democratize access to AI chat services by making them free, easy to integrate, and accessible for all developers.
 
 ## 📚 More on AskCodeium
 
