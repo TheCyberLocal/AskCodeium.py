@@ -33,13 +33,13 @@ from AskCodeium import createChat
 
 chat1 = createChat()
 
-response = await chat1("In short, what is the python programming language?")
+response = chat1("In short, what is the python programming language?")
 
 print(response)
 # Output Example:
 # Python is a high-level, interpreted programming language known for its simplicity and readability.
 
-response = await chat1("What did I previously ask you about?")
+response = chat1("What did I previously ask you about?")
 
 print(response)
 # Output Example:
@@ -47,11 +47,24 @@ print(response)
 
 chat1.clearHistory()
 
-response = await chat1("What did I previously ask you about?")
+response = chat1("What did I previously ask you about?")
 print(response)
 # Output Example:
 # I'm sorry, I do not have the capability to recall previous interactions. How can I assist you today?
 ```
+
+## 🌎 Languages
+
+### AskCodeium for Python
+
+<!-- [![](https://img.shields.io/pypi/v/AskCodeium?color=blue&logo=pypi)](https://pypi.org/project/AskCodeium/) -->
+
+[![](https://img.shields.io/badge/AskCodeium.py-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium.py)
+
+<!-- ### AskCodeium for JavaScript -->
+
+<!-- [![](https://img.shields.io/npm/v/@thecyberlocal/AskCodeium?color=blue&logo=npm)](https://www.npmjs.com/package/@thecyberlocal/AskCodeium) -->
+<!-- [![](https://img.shields.io/badge/AskCodeium.js-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium.js) -->
 
 ## 🌐 Socials
 
