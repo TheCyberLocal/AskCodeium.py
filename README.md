@@ -33,11 +33,11 @@ from AskCodeium import createChat
 
 chat1 = createChat()
 
-response = await chat1("What is the python programming language?")
+response = await chat1("In short, what is the python programming language?")
 
 print(response)
 # Output Example:
-# Python is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms like procedural, object-oriented, and functional programming.
+# Python is a high-level, interpreted programming language known for its simplicity and readability.
 
 response = await chat1("What did I previously ask you about?")
 
@@ -47,7 +47,7 @@ print(response)
 
 chat1.clearHistory()
 
-response = await chat1("What is the python programming language?")
+response = await chat1("What did I previously ask you about?")
 print(response)
 # Output Example:
 # I'm sorry, I do not have the capability to recall previous interactions. How can I assist you today?
