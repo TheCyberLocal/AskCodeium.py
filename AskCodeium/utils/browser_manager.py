@@ -6,7 +6,7 @@ import time
 class BrowserManager:
     def __init__(self):
         chrome_options = Options()
-        chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--headless")
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         self.driver = webdriver.Chrome(options=chrome_options)
@@ -55,8 +55,28 @@ class BrowserManager:
 
         input_div.send_keys(Keys.ENTER)
 
-        # Wait for the response to be displayed
-        time.sleep(wait_time)
+        # Wait for the response to start
+        time.sleep(1)
+
+        # Get chat length
+        last_length = len(self.get_chat())
+
+        # Don't check more than 8 times
+        for i in range(8):
+            # Wait half a second for the chat to update
+            time.sleep(0.5)
+
+            # Get chat length
+            response = self.get_chat()
+            print(i, response)
+            current_length = len(response)
+
+            # If the length hasn't updated, return the response
+            if current_length == last_length:
+                return response
+
+            # Otherwise, update the last length and continue
+            last_length = current_length
 
     def clear_chat(self):
         # If popup exists, clear it
