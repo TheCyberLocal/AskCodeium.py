@@ -19,7 +19,7 @@ The mission of AskCodeium is to make AI chat APIs free, easy to integrate, and a
 Install AskCodeium via pip:
 
 ```bash
-pip install askcodeium
+pip install AskCodeium
 ```
 
 ## ✨ AskCodeium in action!
