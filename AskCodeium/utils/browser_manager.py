@@ -13,7 +13,7 @@ class BrowserManager:
         self.driver.get("https://codeium.com/live/general")
         time.sleep(3)
 
-    def get_text(self):
+    def get_chat(self):
         # If popup exists, clear it
         self.clear_popup()
 
@@ -25,7 +25,7 @@ class BrowserManager:
         # Return the last response div found
         return div_texts[-1]
 
-    def send_text(self, input_text, wait_time=3):
+    def send_chat(self, input_text, wait_time=3):
         # If popup exists, clear it
         self.clear_popup()
 
@@ -41,7 +41,7 @@ class BrowserManager:
         # Wait for the response to be displayed
         time.sleep(wait_time)
 
-    def send_clear(self):
+    def clear_chat(self):
         # If popup exists, clear it
         self.clear_popup()
 
