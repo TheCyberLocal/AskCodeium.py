@@ -28,24 +28,24 @@ pip install askcodeium
 
 ## ✨ AskCodeium in action!
 
+<!-- ### 📑 [AskCodeium Documentation](./docs/askcodeium_docs.md) -->
+
 ```py
 from AskCodeium import createChat
 
 chat1 = createChat()
 
 response = chat1("In short, what is the python programming language?")
-
 print(response)
 # Output Example:
 # Python is a high-level, interpreted programming language known for its simplicity and readability.
 
 response = chat1("What did I previously ask you about?")
-
 print(response)
 # Output Example:
 # You previously asked about the Python programming language.
 
-chat1.clearHistory()
+chat1.clear_history()
 
 response = chat1("What did I previously ask you about?")
 print(response)
