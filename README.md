@@ -1,6 +1,6 @@
 # AskCodeium
 
-## 🗺️ Project Overview
+## 🗺️ [Project Overview](https://github.com/TheCyberLocal/AskCodeium)
 
 <table>
   <tr>
@@ -57,8 +57,6 @@ print(response)
 Integrate artificial intelligence into your applications effortlessly with AskCodeium, the ultimate API for free and easy-to-use chat interactions. Simplify your development process with seamless thread management and maintain conversational context without the need for user accounts. Start using AskCodeium today!
 
 ## 🌎 Languages
-
-### [AskCodeium Project Index](https://github.com/TheCyberLocal/AskCodeium)
 
 ### AskCodeium for Python
 

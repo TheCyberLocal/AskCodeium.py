@@ -1,6 +1,6 @@
 # AskCodeium
 
-## 🗺️ Project Overview
+## 🗺️ [Project Overview](https://github.com/TheCyberLocal/AskCodeium)
 
 AskCodeium is an API designed to enable developer applications to interact with the Codeium chat service in real-time without requiring user accounts. The API focuses on simplicity and maintaining conversational context through thread management, providing a seamless integration experience for developers.
 
@@ -52,8 +52,6 @@ print(response)
 Integrate artificial intelligence into your applications effortlessly with AskCodeium, the ultimate API for free and easy-to-use chat interactions. Simplify your development process with seamless thread management and maintain conversational context without the need for user accounts. Start using AskCodeium today!
 
 ## 🌎 Languages
-
-### [AskCodeium Project Index](https://github.com/TheCyberLocal/AskCodeium)
 
 ### AskCodeium for Python
 
