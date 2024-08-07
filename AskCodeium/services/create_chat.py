@@ -1,15 +1,16 @@
 from AskCodeium.utils.browser_manager import BrowserManager
 
 class createChat:
-    def __init__(self):
+    def __init__(self, save_history=True):
         self._browser = BrowserManager()
         self._history = []
+        self._save_history = save_history
 
-    def send_query(self, query):
-        self._browser.send_chat(query)
-        response = self._browser.get_chat()
-        self._history.append((query, response))
-        return response
+    def close(self):
+        self._browser.close()
+
+    def save_history(self, save_history=True):
+        self._save_history = save_history == True
 
     def get_history(self):
         return self._history
@@ -18,8 +19,12 @@ class createChat:
         self._browser.clear_chat()
         self._history.clear()
 
-    def close(self):
-        self._browser.close()
+    def ask(self, query):
+        self._browser.send_chat(query)
+        response = self._browser.get_chat()
+        if (self._save_history):
+            self._history.append((query, response))
+        return response
 
     def __call__(self, query):
-        return self.send_query(query)
+        return self.ask(query)

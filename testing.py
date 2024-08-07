@@ -1,21 +1,40 @@
 from AskCodeium.services.create_chat import createChat
 
 try:
-    chat = createChat()
-    response = chat("What makes python a data science language?")
-    print('\nrep1', response)
-    print('\nrep2', chat.get_history())
-    chat.clear_history()
-    print('\nrep3', chat.get_history())
-    response = chat("What did I last ask about?")
-    print('\nrep4', response)
-    print('\nrep5', chat.get_history())
-    response = chat("That's fine. Thanks for your help!")
-    print('\nrep6', response)
-    print('\nrep7', chat.get_history())
-    chat.close()
+    # Create two chat sessions
+    chat1 = createChat()
+    chat2 = createChat()
+
+    # Send queries to chat1
+    response1_1 = chat1("What makes python a data science language?")
+    print('\nChat1 Response1:', response1_1)
+    print('\nChat1 History:', chat1.get_history())
+
+    # Send queries to chat2
+    response2_1 = chat2("What is the capital of France?")
+    print('\nChat2 Response1:', response2_1)
+    print('\nChat2 History:', chat2.get_history())
+
+    # Send another query to chat1
+    response1_2 = chat1("Explain machine learning in simple terms.")
+    print('\nChat1 Response2:', response1_2)
+    print('\nChat1 History:', chat1.get_history())
+
+    # Send another query to chat2
+    response2_2 = chat2("Describe the Eiffel Tower.")
+    print('\nChat2 Response2:', response2_2)
+    print('\nChat2 History:', chat2.get_history())
+
+    # Clear chat1 history
+    chat1.clear_history()
+    print('\nChat1 History after clearing:', chat1.get_history())
+
+    # Close chat sessions
+    chat1.close()
+    chat2.close()
 except Exception as e:
     print(e)
+
 
 
 # try:
