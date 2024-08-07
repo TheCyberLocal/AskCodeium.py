@@ -17,7 +17,7 @@
 
 ## 🎯 Project Mission
 
-The mission of AskCodeium is to democratize access to AI chat services by making them free, easy to integrate, and accessible for all developers.
+The mission of AskCodeium is to make AI chat APIs free, easy to integrate, and accessible for all developers.
 
 ## 💾 Installation
 
