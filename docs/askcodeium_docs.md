@@ -11,20 +11,16 @@ that allow you to understand exactly how it works by just hovering your mouse.
 from AskCodeium import createChat
 
 # You can create multiple independent chat sessions
-chat1 = createChat() # Default save_history=True
-chat2 = createChat(False) # Set save_history=False to disable chat history
-
-# You can change the save_history setting using the save_history method
-chat2.save_history(True)
+chat1 = createChat()
+chat2 = createChat()
 
 # Invoke chat instance directly with a query or using the ask method
-response1_1 = chat1("In short, what is Machine Learning?")
-response1_1 = chat1.ask("In short, what is Machine Learning?")
-print("Chat1 Response1:", response1_1)
+response = chat1("In short, what is Machine Learning?")
+response = chat1.ask("In short, what is Machine Learning?")
+print("Chat1 Response1:", response)
 
 # Chat history can be retrieved using the get_history method
 print("Chat1 History:", chat1.get_history())
-
 # Chat History is stored as a list of tuples, where the first element is the query and the second is the response. The first query/response tuple is at the list index 0.
 
 # Example output:
