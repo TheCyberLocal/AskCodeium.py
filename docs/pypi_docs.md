@@ -2,12 +2,7 @@
 
 ## 🗺️ Project Overview
 
-<table>
-  <tr>
-    <td style="padding: 10px;"><img src="https://github.com/TheCyberLocal/AskCodeium/blob/main/codeium_logo.png" alt="" /></td>
-    <td style="padding: 10px;">AskCodeium is an API designed to enable developer applications to interact with the Codeium chat service in real-time without requiring user accounts. The API focuses on simplicity and maintaining conversational context through thread management, providing a seamless integration experience for developers.</td>
-  </tr>
-</table>
+AskCodeium is an API designed to enable developer applications to interact with the Codeium chat service in real-time without requiring user accounts. The API focuses on simplicity and maintaining conversational context through thread management, providing a seamless integration experience for developers.
 
 ## 🗝️ Key Features
 
@@ -29,7 +24,7 @@ pip install askcodeium
 
 ## ✨ AskCodeium in action!
 
-### 📑 [AskCodeium Documentation](./docs/askcodeium_docs.md)
+### 📑 [AskCodeium Documentation on GitHub](https://github.com/TheCyberLocal/AskCodeium.py/blob/main/docs/askcodeium_docs.md)
 
 ```py
 from AskCodeium import createChat
