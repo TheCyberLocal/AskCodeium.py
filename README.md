@@ -54,6 +54,8 @@ print(response)
 # I'm sorry, I do not have the capability to recall previous interactions. How can I assist you today?
 ```
 
+Integrate artificial intelligence into your applications effortlessly with AskCodeium, the ultimate API for free and easy-to-use chat interactions. Simplify your development process with seamless thread management and maintain conversational context without the need for user accounts. Start using AskCodeium today!
+
 ## 🌎 Languages
 
 ### AskCodeium for Python
