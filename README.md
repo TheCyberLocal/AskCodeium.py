@@ -13,6 +13,7 @@
 
 - **Simplicity:** Easy setup and implementation process for developers, with clear documentation and examples.
 - **Thread Context:** Allows applications to maintain the context of conversations across multiple queries.
+- **FREE:** There are many other AI chat APIs available, but what makes AskCodeium unique is its free and open-source nature.
 
 ## 🎯 Project Mission
 
@@ -28,7 +29,7 @@ pip install askcodeium
 
 ## ✨ AskCodeium in action!
 
-<!-- ### 📑 [AskCodeium Documentation](./docs/askcodeium_docs.md) -->
+### 📑 [AskCodeium Documentation](./docs/askcodeium_docs.md)
 
 ```py
 from AskCodeium import createChat
