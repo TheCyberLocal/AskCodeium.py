@@ -62,8 +62,7 @@ Integrate artificial intelligence into your applications effortlessly with AskCo
 
 ### AskCodeium for Python
 
-<!-- [![](https://img.shields.io/pypi/v/AskCodeium?color=blue&logo=pypi)](https://pypi.org/project/AskCodeium/) -->
-
+[![](https://img.shields.io/pypi/v/AskCodeium?color=blue&logo=pypi)](https://pypi.org/project/AskCodeium/)
 [![](https://img.shields.io/badge/AskCodeium.py-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium.py)
 
 <!-- ### AskCodeium for JavaScript -->
