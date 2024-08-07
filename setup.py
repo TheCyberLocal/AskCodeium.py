@@ -3,13 +3,12 @@
 # twine upload dist/*
 from setuptools import setup, find_packages
 
-
 with open('./docs/pypi_docs.md', 'r') as f:
     description = f.read()
 
 setup(
     name='AskCodeium',
-    version='1.0.0',
+    version='1.0.1',
     packages=find_packages(),
     install_requires=[
         # Add dependencies here.

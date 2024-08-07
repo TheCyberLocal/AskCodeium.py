@@ -53,6 +53,8 @@ Integrate artificial intelligence into your applications effortlessly with AskCo
 
 ## 🌎 Languages
 
+### AskCodeium Project Index
+
 [![](https://img.shields.io/badge/AskCodeium-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium)
 
 ### AskCodeium for Python
