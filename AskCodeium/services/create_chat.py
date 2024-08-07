@@ -14,7 +14,8 @@ class createChat:
         self._browser.clear_chat()
 
     def ask(self, query):
-        return self._browser.send_chat(query)
+        self._browser.send_chat(query)
+        return self._browser.get_chat()
 
     def __call__(self, query):
         return self.ask(query)

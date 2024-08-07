@@ -6,7 +6,7 @@ import time
 class BrowserManager:
     def __init__(self):
         chrome_options = Options()
-        # chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--headless")
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         self.driver = webdriver.Chrome(options=chrome_options)
@@ -25,7 +25,7 @@ class BrowserManager:
 
         # Return a list of query/response tuples
         # Div text indexes 3 and 4 are the first query, continue till the last div text
-        return [(div_texts[i], div_texts[i+1]) for i in range(3, len(div_texts), 2)]
+        return [(div_texts[i], div_texts[i+1]) for i in range(3, len(div_texts) - 1, 2)]
 
     def get_chat(self):
         # If popup exists, clear it
@@ -40,7 +40,7 @@ class BrowserManager:
         # Return the last response div found
         return div_texts[-1]
 
-    def send_chat(self, input_text, wait_time=4):
+    def send_chat(self, input_text):
         # If popup exists, clear it
         self.clear_popup()
 
@@ -56,27 +56,7 @@ class BrowserManager:
         input_div.send_keys(Keys.ENTER)
 
         # Wait for the response to start
-        time.sleep(1)
-
-        # Get chat length
-        last_length = len(self.get_chat())
-
-        # Don't check more than 8 times
-        for i in range(8):
-            # Wait half a second for the chat to update
-            time.sleep(0.5)
-
-            # Get chat length
-            response = self.get_chat()
-            print(i, response)
-            current_length = len(response)
-
-            # If the length hasn't updated, return the response
-            if current_length == last_length:
-                return response
-
-            # Otherwise, update the last length and continue
-            last_length = current_length
+        time.sleep(4)
 
     def clear_chat(self):
         # If popup exists, clear it
