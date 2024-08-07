@@ -11,12 +11,27 @@ class BrowserManager:
         chrome_options.add_argument("--no-sandbox")
         self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.get("https://codeium.com/live/general")
-        time.sleep(3)
+        time.sleep(3)  # Wait for the page to load
+
+    def get_history(self):
+        # If popup exists, clear it
+        self.clear_popup()
+
+        # Find all div elements on the page
+        div_elements = self.driver.find_elements("tag name", "div")
+
+        # Filter out div elements that contain other div elements
+        div_texts = [div.text for div in div_elements if not div.find_elements("tag name", "div") and div.text.strip()]
+
+        # Return a list of query/response tuples
+        # Div text indexes 3 and 4 are the first query, continue till the last div text
+        return [(div_texts[i], div_texts[i+1]) for i in range(3, len(div_texts), 2)]
 
     def get_chat(self):
         # If popup exists, clear it
         self.clear_popup()
 
+        # Find all div elements on the page
         div_elements = self.driver.find_elements("tag name", "div")
 
         # Filter out div elements that contain other div elements
@@ -25,12 +40,14 @@ class BrowserManager:
         # Return the last response div found
         return div_texts[-1]
 
-    def send_chat(self, input_text, wait_time=3):
+    def send_chat(self, input_text, wait_time=4):
         # If popup exists, clear it
         self.clear_popup()
 
-        input_div = self.driver.find_element("css selector", f"div.ql-editor")
+        # Find the input div
+        input_div = self.driver.find_element("css selector", "div.ql-editor")
 
+        # Send the input
         input_div.send_keys(input_text)
 
         # Wait for the input to be registered
@@ -67,11 +84,12 @@ class BrowserManager:
         # Iterate through all found buttons and click the target button
         for button in buttons:
             if button.get_attribute("class") == target_class:
+                # Click close popup button
                 button.click()
-                break
 
-        # Wait for the popup to close
-        time.sleep(1)
+                # Wait for the popup to close
+                time.sleep(1)
+                break
 
     def close(self):
         # Close the browser
