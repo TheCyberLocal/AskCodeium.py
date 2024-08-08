@@ -1,6 +1,6 @@
 # AskCodeium
 
-## 🗺️ Project Overview
+## 🗺️ [Project Overview](https://github.com/TheCyberLocal/AskCodeium)
 
 <table>
   <tr>
@@ -58,17 +58,15 @@ Integrate artificial intelligence into your applications effortlessly with AskCo
 
 ## 🌎 Languages
 
-### [AskCodeium Project Index](https://github.com/TheCyberLocal/AskCodeium)
-
 ### AskCodeium for Python
 
 [![](https://img.shields.io/pypi/v/AskCodeium?color=blue&logo=pypi)](https://pypi.org/project/AskCodeium/)
 [![](https://img.shields.io/badge/AskCodeium.py-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium.py)
 
-<!-- ### AskCodeium for JavaScript -->
+### AskCodeium for JavaScript
 
-<!-- [![](https://img.shields.io/npm/v/@thecyberlocal/AskCodeium?color=blue&logo=npm)](https://www.npmjs.com/package/@thecyberlocal/AskCodeium) -->
-<!-- [![](https://img.shields.io/badge/AskCodeium.js-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium.js) -->
+[![](https://img.shields.io/npm/v/@thecyberlocal/askcodeium?color=blue&logo=npm)](https://www.npmjs.com/package/@thecyberlocal/askcodeium)
+[![](https://img.shields.io/badge/AskCodeium.js-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium.js)
 
 ## 🌐 Socials
 
