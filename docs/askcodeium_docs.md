@@ -10,18 +10,18 @@ that allow you to understand exactly how it works by just hovering your mouse.
 ```py
 from AskCodeium import createChat
 
-# You can create multiple independent chat sessions
+# You can create multiple independent chat sessions.
 chat1 = createChat()
 chat2 = createChat()
 
-# Invoke chat instance directly with a query or using the ask method
+# Invoke chat instance directly with a query or using the ask method.
 response = chat1("In short, what is Machine Learning?")
 response = chat1.ask("In short, what is Machine Learning?")
 print("Chat1 Response1:", response)
 
-# Chat history can be retrieved using the get_history method
+# Chat history can be retrieved using the get_history method.
 print("Chat1 History:", chat1.get_history())
-# Chat History is stored as a list of tuples, where the first element is the query and the second is the response. The first query/response tuple is at the list index 0.
+# Chat history is returned as list of tuples, [(query1, response1), ...].
 
 # Example output:
 # Chat1 History: [
@@ -32,12 +32,12 @@ print("Chat1 History:", chat1.get_history())
 print("Chat2 History:", chat2.get_history())
 # Example output: []
 
-# You can clear the chat history using the clear_history method
+# You can clear the chat history using the clear_history method.
 chat1.clear_history()
 print("Chat1 History:", chat1.get_history())
 # Example output: []
 
-# You can close the chat session using the close method
+# You can close the chat session using the close method.
 chat1.close()
 chat2.close()
 ```

@@ -8,7 +8,8 @@ AskCodeium is an API designed to enable developer applications to interact with 
 
 - **Simplicity:** Easy setup and implementation process for developers, with clear documentation and examples.
 - **Thread Context:** Allows applications to maintain the context of conversations across multiple queries.
-- **FREE:** There are many other AI chat APIs available, but what makes AskCodeium unique is its free and open-source nature.
+- **Open Source and Free:** There are many other AI chat APIs available, but what makes AskCodeium unique is its open-source and free nature.
+- **Multiligual Availability:** AskCodeium allows developers to interact with the API across languages.
 
 ## 🎯 Project Mission
 
@@ -58,10 +59,10 @@ Integrate artificial intelligence into your applications effortlessly with AskCo
 [![](https://img.shields.io/pypi/v/AskCodeium?color=blue&logo=pypi)](https://pypi.org/project/AskCodeium/)
 [![](https://img.shields.io/badge/AskCodeium.py-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium.py)
 
-<!-- ### AskCodeium for JavaScript -->
+### AskCodeium for JavaScript
 
-<!-- [![](https://img.shields.io/npm/v/@thecyberlocal/AskCodeium?color=blue&logo=npm)](https://www.npmjs.com/package/@thecyberlocal/AskCodeium) -->
-<!-- [![](https://img.shields.io/badge/AskCodeium.js-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium.js) -->
+[![](https://img.shields.io/npm/v/@thecyberlocal/askcodeium?color=blue&logo=npm)](https://www.npmjs.com/package/@thecyberlocal/askcodeium)
+[![](https://img.shields.io/badge/AskCodeium.js-black?logo=github&logoColor=white)](https://github.com/TheCyberLocal/AskCodeium.js)
 
 ## 🌐 Socials
 
